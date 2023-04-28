@@ -113,7 +113,8 @@ video {
 
   .grid{
     display: grid;
-    gap: 1.5rem;
+    width: 90%;
+    margin-left: 5%;
   }
 
   .header__content {
@@ -264,6 +265,54 @@ video {
         }
 
 
+        .skills-container {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 2rem;
+          border-radius: 5px;
+          text-align: center;
+        }
+        
+        .skills-container h2 {
+          font-size: 2rem;
+          margin-bottom: 1.5rem;
+          color: #0073a4;
+        }
+        
+        .column-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        
+        .column {
+          margin: 0.5rem;
+        }
+        
+        ol {
+          list-style-type: none;
+          padding-left: 0;
+        }
+        
+        .skill li:before {
+          content: "\2022";
+          color: #0073a4;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+        
+        .skill li {
+          margin-bottom: 0.5rem;
+          font-size: 1rem;
+          line-height: 1.5;
+          text-align: left;
+        }
+        
+        
+        
+
   @media (min-width: 47.9em) {
     #about {
       width: 85%;
@@ -311,12 +360,16 @@ video {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 2rem;
+
 }
 
 .qualification__button{
   font-size: 1.25rem;
   font-weight: 500;
   cursor: pointer;
+  margin-right: 1rem;
+  margin-left: 1rem;
+
 }
 
 .qualification__button:hover{
@@ -385,58 +438,7 @@ video {
 
 /* --------------  END EXPERIENCE  --------------- */
 
-/* --------------  INI PROYECTS  --------------- */
 
-#proyects{
-  max-width: 1100px;
-  padding: 100px 0;
-  maRGIN: auto;
-}
-
-#proyects .fila{
-  display: flex;
-  justify-content: space-between;
-  margin: 30px 0;
-}
-
-#proyects .fila .proyect{
-  max-width: 450px;
-  border: 1px solid black;
-  margin: 0 10px;
-  position: relative;
-  overflow: hidden;
-}
-
-#proyects .fila .proyect img{
-  width: 100%;
-  height: 100%;
-  filter: grayscale(1);
-  object-fit: cover;
-  transition: .5s;
-}
-
-#proyects .fila .proyect:hover img{
-  filter: grayscale(0);
-}
-
-#proyects .fila .proyect .info{
-  position: absolute;
-  left: 0;
-  background-color: #322f30;
-  color: red;
-  width: 100%;
-  padding: 10px;
-  opacity: 0;
-  bottom: -30px;
-  transition: .5s;
-}
-
-#proyects .fila .proyect:hover .info{
-  opacity: 1;
-  bottom: 0;
-}
-
-/* --------------  END PROYECTS  --------------- */
 
 
 /* ------------ INIT of the PROYECTSS Icons --------------*/
@@ -458,7 +460,11 @@ a:hover {
 
 
 .imgp {
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 43vh;
   object-fit: cover;
 }
@@ -489,6 +495,7 @@ a:hover {
 }
 
 .description {
+  text-align: center;
   position: relative;
   z-index: 1;
   margin: 1rem 0 1.5rem 0;
@@ -639,14 +646,13 @@ a:hover {
   .intro .title {
   font-size: 4.25rem;
   padding: 2.5rem 2.5rem 3rem 2.5rem;
-  background: #fff;
   }
   img {
   height: 60vh;
   }
   .description {
   font-size: 1.25rem;
-  margin: 1rem 0 0 0;
+  margin: 2rem 0 0 0;
   }
   .previous, .next {
   flex-basis: 8.33%;
@@ -870,3 +876,153 @@ ul.social-icons {
     background-color: #5a32a3;
 }
 /* ------------ END of the Social Icons --------------*/
+
+
+
+
+.timeline:before {
+  content: '';
+  position:absolute;
+  height:100%;
+  left:50%;
+  width:2px;
+  top:-20px;
+  background:#020202;
+  z-index:1;
+}
+.timeline{
+  position:relative;
+  margin: 50px auto;
+  padding:50px 0;
+}
+
+
+.timeline ul{
+  margin:0;
+  padding:0 ;
+}
+
+.timeline ul li{
+  list-style:none;
+  box-sizing:border-box; 
+  line-height:normal;
+  position:relative;
+  width:50%;
+  padding: 40px 70px;
+}
+
+.timeline ul li .right_content h2{
+  color:rgba(59,112,239,1);
+  padding:0px 2px 18px 0px;
+}
+.timeline ul li:nth-child(odd){
+  float:left;
+  text-align:right;
+  clear:both;
+}
+
+.timeline ul li:nth-child(even){
+  float:right;
+  text-align:left;
+  clear:both;
+}
+
+.left_content{
+  padding-bottom:20px;
+}
+
+.timeline ul li:nth-child(odd):before{
+  content: '';
+  position:absolute;
+  width:10px;
+  height:10px;
+  background:rgba(59,112,239,1);
+  border-radius:50%;
+  box-shadow: 0 0 0 3px rgba(58,112,239,0.2);
+  right:-6px;
+  top:24px;
+  z-index:1;
+}
+
+.timeline ul li:nth-child(even):before{
+  content: '';
+  position:absolute;
+  width:10px;
+  height:10px;
+ background:rgba(59,112,239,1);
+  border-radius:50%;
+  box-shadow: 0 0 0 3px rgba(58,112,239,0.2);
+  left:-6px;
+  top:24px;
+}
+
+.timeline ul li:nth-child(odd) .left_content{
+  position:absolute;
+  top:12px;
+  right:-180px;
+  margin:0;
+  padding:8px 16px;
+
+  color:#0c0c0c;
+  box-shadow:0 0 0 3px rgba(59,112,239,0.3);
+  border-radius:18px;
+  
+}
+
+.timeline ul li:nth-child(even) .left_content{
+  position:absolute;
+  top:12px;
+  left:-185px;
+  margin:0;
+  padding:8px 16px;
+  
+  color:#050505;
+  box-shadow:0 0 0 3px rgba(59,112,239,0.3);
+  border-radius:18px;
+  
+}
+
+
+@media (max-width: 1000px){
+  
+  .timeline{
+    width:100%;
+  }
+}
+
+@media (max-width: 767px){
+  .timeline{
+    width:100%;
+  }
+  .timeline:before{
+    left:20px;
+  }
+  .timeline ul li:nth-child(odd),
+  .timeline ul li:nth-child(even){
+    width:100%;
+    text-align:left;
+    padding-left:50px; 
+  }
+  
+  .timeline ul li:nth-child(odd):before
+    {
+    top:-18px;
+    left:16px;
+  
+  }
+  .timeline ul li:nth-child(even):before
+  { 
+    top:-18px;
+    left:16px;
+  }
+  
+    .timeline ul li:nth-child(odd) .left_content,
+  .timeline ul li:nth-child(even) .left_content
+  {
+    top:-30px;
+    left:50px;
+    right:inherit;
+  }
+
+  
+}
