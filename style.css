@@ -5,7 +5,7 @@ body {
     font-family: "Montserrat"; 
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+    background-color: #333;
     font-family: 'Barlow', sans-serif;
     font-size: 1.125rem;
     font-weight: 400;
@@ -15,14 +15,15 @@ body {
   }
   
   hr {
-    width: 5.625rem;
+    width: 6.625rem;
     height: 0.1875rem;
-    background-color: #070000; }
-  
+    background-color: #ffffff;
+  margin-bottom: 5rem; }
   
   h2 {
     text-transform: uppercase;
-    font-weight: 700; }
+    font-weight: 700; 
+  color: white;}
   
 /* -----------------  INI HEADER  -------------------*/
 
@@ -30,8 +31,8 @@ video {
   opacity: 0.8; /* Aquí puedes ajustar la transparencia a tu gusto */
   position: absolute;
   top: 0;
+  width: 105%;
   left: 0;
-  width: 100%;
   height: 100%;
   margin: 0 auto;
   object-fit: cover;
@@ -45,6 +46,10 @@ video {
   justify-content: right; 
   align-items: center;
   z-index: 100;
+}
+
+p{
+  color: white;
 }
 
 .header__top--responsive ul {
@@ -100,6 +105,8 @@ video {
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    padding: 20px;
+
     }
     a:hover {
       color: #232323;
@@ -114,6 +121,7 @@ video {
     display: grid;
     width: 90%;
     margin-left: 5%;
+    margin-top: -3rem;
   }
 
   .header__content {
@@ -142,7 +150,7 @@ video {
       font-weight: 700; }
     #contact .btn {
       margin-top: 1.5rem;
-      border: 2px solid #232323;
+      border: 2px solid #ffffff;
       color: #ffffff; }
       #contact .btn:hover {
         background-color: #232323;
@@ -243,8 +251,7 @@ video {
       margin-bottom: 2rem; }
 
     #about p {
-      font-size: 1.25rem;
-      color: #232323; }
+      font-size: 1.25rem; }
     #about p + p {
       margin-bottom: 2rem; }
   
@@ -265,6 +272,7 @@ video {
 
 
       .skills-container {
+        margin-top: -1rem;
         max-width: 800px;
         margin: 0 auto;
         padding: 2rem;
@@ -380,7 +388,7 @@ video {
     width:20px;
     height:4px;
     border-radius: 2px 0 0 2px;
-    background-color: #e84545;
+    background-color: #ec6d6d;
     transition: .5s;
     }
     
@@ -390,7 +398,7 @@ video {
     bottom: 0;
     width:100px;
     border-radius: 0 2px 2px 0;
-    background-color: #e84545;
+    background-color: #ec6d6d;
     }
     
     .skills-icons{
@@ -420,7 +428,7 @@ video {
     }
     
     .skills-title h3{
-    color: #333;
+    color: #ffffff;
     margin-top: 0.5rem;
     }
     
@@ -450,7 +458,7 @@ video {
       text-align: center justify;
       font-family: 'Roboto', sans-serif;
       position: relative;
-      color: #3365A6;
+      color: #ceb6b6;
     }
     
   
@@ -482,11 +490,14 @@ video {
   cursor: pointer;
   margin-right: 1rem;
   margin-left: 1rem;
+  color: white;
+  box-shadow: 0 2px 4px rgba(240, 36, 36, 0.2);
 
 }
 
 .qualification__button:hover{
-  color: #0073a4;
+  color: #ca4c43;
+  transition: 1s;
 }
 
 .qualification__icon{
@@ -582,7 +593,7 @@ video {
 }
 
 .timeline ul li .right_content h2{
-  color:rgba(59,112,239,1);
+  color:rgb(201, 207, 221);
   padding:0px 2px 18px 0px;
 }
 .timeline ul li:nth-child(odd){
@@ -606,7 +617,7 @@ video {
   position:absolute;
   width:10px;
   height:10px;
-  background:rgba(59,112,239,1);
+  background:#ec6d6d;
   border-radius:50%;
   box-shadow: 0 0 0 3px rgba(58,112,239,0.2);
   right:-6px;
@@ -619,11 +630,12 @@ video {
   position:absolute;
   width:10px;
   height:10px;
- background:rgba(59,112,239,1);
+ background:#ec6d6d;
   border-radius:50%;
   box-shadow: 0 0 0 3px rgba(58,112,239,0.2);
   left:-6px;
   top:24px;
+  z-index: 5;
 }
 
 .timeline ul li:nth-child(odd) .left_content{
@@ -633,7 +645,7 @@ video {
   margin:0;
   padding:8px 16px;
 
-  color:#0c0c0c;
+  color:#ffffff;
   box-shadow:0 0 0 3px rgba(59,112,239,0.3);
   border-radius:18px;
   
@@ -646,7 +658,7 @@ video {
   margin:0;
   padding:8px 16px;
   
-  color:#050505;
+  color:#ffffff;
   box-shadow:0 0 0 3px rgba(59,112,239,0.3);
   border-radius:18px;
   
@@ -719,6 +731,9 @@ a:hover {
   color: #232323;
 }
 
+#proyect{
+  margin-top: 7rem;
+}
 
 .imgp {
   width: 80%;
@@ -752,7 +767,7 @@ a:hover {
 }
 
 .intro .title .underline {
-  color: #232323;
+  color: #ffffff;
 }
 
 .description {
@@ -799,6 +814,7 @@ a:hover {
   font-size: inherit;
   width: 55px;
   height: 55px;
+  color: white;
 }
 
 .controls {
@@ -808,12 +824,12 @@ a:hover {
   justify-content: flex-end;
 }
 .controls .previous {
-  border: 1px solid #232323;
+  border: 1px solid white;
 }
 .controls .next {
-  border-top: 1px solid #232323;
-  border-right: 1px solid #232323;
-  border-bottom: 1px solid #232323;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
 }
 .controls .icon {
   position: relative;
@@ -908,9 +924,7 @@ a:hover {
   font-size: 4.25rem;
   padding: 2.5rem 2.5rem 3rem 2.5rem;
   }
-  img {
-  height: 60vh;
-  }
+
   .description {
   font-size: 1.25rem;
   margin: 2rem 0 0 0;
@@ -1137,3 +1151,5 @@ ul.social-icons {
     background-color: #5a32a3;
 }
 /* ------------ END of the Social Icons --------------*/
+
+
