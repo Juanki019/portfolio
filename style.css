@@ -121,8 +121,8 @@ p{
     display: grid;
     width: 90%;
     margin-left: 5%;
-    margin-top: -3rem;
   }
+
 
   .header__content {
     width: 100%;
@@ -763,14 +763,49 @@ a:hover {
   font-weight: 500;
   line-height: 1.1;
   text-decoration: underline;
-  color: rgba(45, 90, 197, 0.3);
+  color: rgba(74, 110, 196, 0.3);
 }
 
 .intro .title .underline {
   color: #ffffff;
 }
 
+.social-iconp {
+  color: #2c2323;
+  background-color: #dacaca;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.social-iconp:hover{
+  color: #fff;
+  background-color: #ec6d6d;
+  padding: 8px;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.see__proyect{
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: 1rem 0 1.5rem 0;
+  font-size: 1rem;
+  opacity: 0;
+  animation: fadeIn 0.8s 0.6s ease forwards;
+}
+
 .description {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: 1rem 0 1.5rem 0;
+  font-size: 1rem;
+  opacity: 0;
+  animation: fadeIn 0.8s 0.6s ease forwards;
+}
+
+.description__program {
   text-align: center;
   position: relative;
   z-index: 1;
@@ -803,7 +838,7 @@ a:hover {
   display: inline-block;
   cursor: pointer;
   outline: none;
-  border: 0;
+  border: 2;
   vertical-align: middle;
   text-decoration: none;
   background: transparent;
@@ -817,11 +852,16 @@ a:hover {
   color: white;
 }
 
+#buttonp:hover{
+  background-color: #ec6d6d;
+  transition: 1s;
+}
+
 .controls {
   position: relative;
   z-index: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .controls .previous {
   border: 1px solid white;
@@ -965,10 +1005,7 @@ a:hover {
       padding: 2.5rem 2.5rem 3rem 2.5rem;
       background: white;
     }
-    
-    img {
-      height: 60vh;
-    }
+
     
     .description {
       font-size: 1.25rem;
@@ -987,37 +1024,9 @@ a:hover {
       display: none;
     }
     
-    .toggle-nav {
-      display: none;
-    }
-    
-    .flex-nav ul {
-      display: flex;
-      flex-direction: row;
-      position: relative;
-      padding: 0;
-      justify-content: flex-end;
-    }
-    
-    nav {
-      padding: 1.75rem 0 1.75rem 0;
-    }
-    
-    nav ul {
-      line-height: 2.2;
-      display: flex;
-      justify-content: flex-start;
-    }
-    
-    nav ul li {
-      font-size: 1rem;
-      text-transform: uppercase;
-      margin: 0 2rem 0 0;
-    }
-    
-    nav ul li:nth-child(3) {
-      margin: 0;
-    }
+
+
+
   }
 }
   
