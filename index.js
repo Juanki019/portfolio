@@ -10,7 +10,7 @@ function downloadDocument() {
     link.href = urlDocumento;
     
     // Establecer el atributo "download" del elemento "a" para indicar que es una descarga
-    link.download = "CVIngles.pdf";
+    link.download = "CVEnglish.pdf";
     
     // Simular un clic en el elemento "a" para iniciar la descarga
     link.click();
@@ -171,4 +171,3 @@ window.onload = function() {
 };
 
 })
-
