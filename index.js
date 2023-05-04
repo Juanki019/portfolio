@@ -151,8 +151,17 @@ const hamburgerMenu = document.querySelector('.hamburger');
 const navList = document.querySelector('.nav__list');
 
 hamburgerMenu.addEventListener('click', () => {
-  navList.classList.toggle('active');
+    navList.classList.toggle('active');
 });
 
+
+const hamburger = document.querySelector('.hamburger');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.add('animate__flipInX');
+  hamburger.addEventListener('animationend', () => {
+    hamburger.classList.remove('animate__flipInX');
+  }, { once: true });
+});
 
 });
