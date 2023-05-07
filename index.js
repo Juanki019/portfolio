@@ -158,10 +158,33 @@ hamburgerMenu.addEventListener('click', () => {
 const hamburger = document.querySelector('.hamburger');
 
 hamburger.addEventListener('click', () => {
-  hamburger.classList.add('animate__flipInX');
-  hamburger.addEventListener('animationend', () => {
+    hamburger.classList.add('animate__flipInX');
+    hamburger.addEventListener('animationend', () => {
     hamburger.classList.remove('animate__flipInX');
-  }, { once: true });
+    }, { once: true });
 });
 
 });
+
+let index = 0;
+const decrease = () => {
+if (index > 0) {
+    index--;
+    document.body.className = `step${index}-left-initial`;
+    void document.documentElement.offsetHeight;
+    document.body.className = `step${index}-left`;
+}
+};
+const increase = () => {
+  if (index < 3) {
+    index++;
+    document.body.className = `step${index}-initial`;
+    void document.documentElement.offsetHeight;
+    document.body.className = `step${index}`;
+  } else {
+    index = 0;
+    document.body.className = `step${index}-initial`;
+    void document.documentElement.offsetHeight;
+    document.body.className = `step${index}`;
+  }
+};
