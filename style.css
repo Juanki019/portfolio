@@ -647,7 +647,7 @@ p{
 .timeline ul li:nth-child(odd) .left_content{
   position:absolute;
   top:12px;
-  right:-200px;
+  right:-178px;
   margin:0;
   padding:8px 16px;
 
@@ -660,7 +660,7 @@ p{
 .timeline ul li:nth-child(even) .left_content{
   position:absolute;
   top:12px;
-  left:-185px;
+  left:-195px;
   margin:0;
   padding:8px 16px;
   
