@@ -1,6 +1,6 @@
 
 function downloadDocument() {
-    var urlDocumento = "CVIngles.pdf";
+    var urlDocumento = "CVEnglish.pdf";
     
     var link = document.createElement("a");
     
