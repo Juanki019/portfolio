@@ -489,15 +489,25 @@ p{
   font-size: 1.25rem;
   font-weight: 500;
   cursor: pointer;
+  padding: 6px;
   margin-right: 1rem;
   margin-left: 1rem;
   color: white;
-  box-shadow: 0 2px 4px rgba(240, 36, 36, 0.2);
+  box-shadow: 0 2px 4px rgba(223, 216, 216, 0.2);
+  border-radius: 3px;
+}
 
+.fa-bookmark:before{
+  margin: 5px;
+}
+.fa-mortar-board:before, .fa-graduation-cap:before{
+  margin: 5px;
 }
 
 .qualification__button:hover{
-  color: #ca4c43;
+  color: #d3645c;
+  box-shadow: 0 2px 4px #d3645c;
+
   transition: 1s;
 }
 
@@ -1308,3 +1318,4 @@ ul.social-icons {
   stroke-dasharray: 94 100;
   stroke-dashoffset: -94px;
 }
+
