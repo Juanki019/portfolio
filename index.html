@@ -6,11 +6,12 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<script src="index.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="icon" type="image/png" href="images\icon.jpg">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Juan Carlos Sánchez</title>
+	<title>Juan Carlos Sanchez</title>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TV8WD9FDQ"></script>
@@ -48,11 +49,10 @@
 					</div>
 					
 			<div class="header__content">
-				<h1 style="color:white">JUAN CARLOS<span style="color:#ec6d6d">/</span>SÁNCHEZ</h1>	
+				<h1 style="color:white">JUAN CARLOS<span style="color:#ec6d6d">/</span>SANCHEZ</h1>	
 				<section id="contact">
 					<div class="container">
-						<p class="lead">To contact me</p>
-						<a class="btn" href="mailto:juanki.sgbh@gmail.com"> HERE !</a>
+						<a class="btn" href="mailto:juanki.sgbh@gmail.com"> Contact me!</a>
 					</div>
 				</section>			
 			</div>
@@ -77,10 +77,10 @@
 
 
 <!--========== Qualifications ============-->
-
+<div class="back">
 	<section class="qualification section" id="qualification">
-		<h2 class="section__title">Qualifications</h2>
-		<hr>
+		<h2 class="section__title2">Qualifications</h2>
+		<hr class="hr_quali">
 		<span class="section__subtitle"></span>
 		<div class="qualification__container container">
 			<div class="qualification__tabs">
@@ -104,7 +104,7 @@
 							<li>
 							<div class="right_content">
 								<h2>University Of Texas at Austin</h2>
-								<p>English Language Program</p>
+								<p class="description_quali">English Language Program</p>
 							</div>
 							<div class="left_content">
 								<h3>2021 - 2022</h3>
@@ -113,7 +113,7 @@
 							<li>
 							<div class="right_content">
 								<h2>European University of Madrid</h2>
-								<p>Computer Engineering <br> (3rd year)</p>
+								<p class="description_quali">Computer Engineering <br> (3rd year)</p>
 							</div>
 							<div class="left_content">
 								<h3>2020 - Present </h3>
@@ -122,7 +122,7 @@
 							<li>
 							<div class="right_content">
 								<h2>San José de Cluny School</h2>
-								<p>Science-Technological Baccalaureate</p>
+								<p class="description_quali">Science-Technological Baccalaureate</p>
 							</div>
 							<div class="left_content">
 								<h3>2018 - 2020</h3>
@@ -163,8 +163,8 @@
 								</li>
 								<li>
 									<div class="right_content">
-										<h2> TOEFl</h2>
-										<p>level: high-intermediate</p>
+										<h2> TOEFL</h2>
+										<p class="description_quali">level: high-intermediate</p>
 									</div>
 									<div class="left_content">
 										<h3>May 2022</h3>
@@ -177,11 +177,12 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	</section>
 
 <section class="skill">
 	<h2 class="section__title">SKILLS</h2>
-	<hr>
+	<hr >
 	<!--Skills Bar-->
 	<div class="skills-container">
 		<div class="skills-box">
@@ -252,163 +253,62 @@
 <!--========== PROYECTS ================-->
 
 <section id="proyects">
-	<h2 class="section__title">Projects</h2>
+	<h2 class="section__title">Some Projects</h2>
 	<hr>
 <div class="hold">
-	<div class="container">
-		<div class="grid">
-			<div class="column-xs-12">
-			<ul class="slider">
-				<li class="slider-item active">
-					<div class="grid vertical">
-						<div class="column-xs-12 column-md-2 hide-mobile">
-						<div class="intro">
-							<h1 class="title"><span class="underline">NBA Page</span></h1>
-						</div>
-						</div>
-						<div class="column-xs-12 column-md-10">
-						<div class="image-holder">
-							<img class="imgp" src="images\basket.jpg">
-						</div>
-						<div class="grid">
-							<div class="column-xs-12 column-md-9">
-							<div class="intro show-mobile">
-								<h1 class="title"><span class="underline">NBA Page</span></h1>
-							</div>
-							<p class="description"> Web application built in Python using the Streamlit library. This web application performs a web scraping 
-								task on a basketball page to gather information about player points in games played from 1950 to 2022.</p>
-							<p class="description__program">Make in Python</p>
-							<div class="see__proyect">
-								<a class="social-iconp" href="https://juanki019-streamlitbasket-index-ir0rh7.streamlit.app/" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i>
-								</a>
-								</div>
-							</div>
-						</div>
-						</div>
-					</div>
-					</li>
 
-				<li class="slider-item">
-				<div class="grid vertical">
-					<div class="column-xs-12 column-md-2 hide-mobile">
-					<div class="intro">
-						<h1 class="title"><span class="underline">TRACK NUMBER</span></h1>
-					</div>
-					</div>
-					<div class="column-xs-12 column-md-10">
-					<div class="image-holder">
-						<img class="imgp" src="images\track.png">
-					</div>
-					<div class="grid">
-						<div class="column-xs-12 column-md-9">
-						<div class="intro show-mobile">
-							<h1 class="title"><span class="underline">TRACK NUMBER</span></h1>
-						</div>
-						<p class="description">This program allows you to enter a phone number and get the server location of the phone connected to, also you can get the service provider.
-						</p>
-						<p class="description__program">Make in Python</p>
-							<div class="see__proyect">
-							<a class="social-iconp" href="https://github.com/Juanki019/trackNumber" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i>
-							</a>
-							</div>
-						</div>
-					</div>
-					</div>
-				</div>
-				</li>
-				<li class="slider-item">
-				<div class="grid vertical">
-					<div class="column-xs-12 column-md-2 hide-mobile">
-					<div class="intro">
-						<h1 class="title"><span class="underline">Predicting Stock Prices</span></h1>
-					</div>
-					</div>
-					<div class="column-xs-12 column-md-10">
-					<div class="image-holder">
-						<img class="imgp" src="images\grafic.png">
-					</div>
-					<div class="grid">
-						<div class="column-xs-12 column-md-9">
-						<div class="intro show-mobile">
-							<a href="#">
-							<h1 class="title"><span class="underline">Predicting Stock Prices</span></h1>
-							</a>
-						</div>
-						<p class="description">The project involves manipulating stock price data of a company and predicting what will happen to the stock price solely based on the behavior of the graph, regardless of news or external factors.</p>
-						<p class="description__program">Make in R</p>	
-						<div class="see__proyect">
-							<a class="social-iconp" href="https://github.com/Juanki019/StockPrices"><i class="fa fa-eye" aria-hidden="true"></i>
-							</a>
-							</div>
-					</div>
-					</div>
-					</div>
-				</div>
-				</li>
-				<li class="slider-item">
-				<div class="grid vertical">
-					<div class="column-xs-12 column-md-2 hide-mobile">
-					<div class="intro">
-						<a href="#">
-							<h1 class="title"><span class="underline">KHR - Keep Healthy and Run</span></h1>
-						</a>
-					</div>
-					</div>
-					<div class="column-xs-12 column-md-10">
-					<div class="image-holder">
-						<img class="imgp" src="images\KHR.png">
-					</div>
-					<div class="grid">
-						<div class="column-xs-12 column-md-9">
-						<div class="intro show-mobile">
-							<h1 class="title"><span class="underline">KHR - Keep Healthy and Run</span></h1>
-						</div>
-						<p class="description">KHR is a Java application that aims to  efficiently and practically monitor sports teams. KHR is a comprehensive solution designed to help sports
-							teams, coaches, doctors, and players manage and analyze critical data related to player performance, health, and team activities.</p>
-						<p class="description__program">Make in Java</p>
-						<div class="see__proyect">
-							<a class="social-iconp" href="https://github.com/Juanki019/KHRV1"><i class="fa fa-eye" aria-hidden="true"></i>
-							</a>
-							</div>
-						</div>
-					</div>
-					</div>
-				</div>
-				</li>
-				
-			</ul>
-			<div class="grid">
-			<div class="column-xs-12">
-				<div class="controls">
-					<button id="buttonp" class="previous" onclick="decrease()">
-					<span class="visually-hidden">Previous</span>
-					<span class="icon arrow-left" aria-hidden="true"></span>
-					</a>
-					<button id="buttonp" class="next" onclick="increase()">
-					<span class="visually-hidden">Next</span>
-					<span class="icon arrow-right" aria-hidden="true"></span>
-					</a>
-				</div>
-				</div>
-				<div class="pagination1">
-					<svg class="pagination" width="320" height="246" viewBox="0 0 200 260">
-						<path d="m 20,100 a 10,10 0 0 1 -10,10 10,10 0 0 1 -10,-10 10,10 0 0 1 10,-10 10,10 0 0 1 10,10" class="dot" />
-						<path d="m 80,100 a 10,10 0 0 1 -10,10 10,10 0 0 1 -10,-10 10,10 0 0 1 10,-10 10,10 0 0 1 10,10" class="dot" />
-						<path d="m 140,100 a 10,10 0 0 1 -10,10 10,10 0 0 1 -10,-10 10,10 0 0 1 10,-10 10,10 0 0 1 10,10" class="dot" />
-						<path d="m 200,100 a 10,10 0 0 1 -10,10 10,10 0 0 1 -10,-10 10,10 0 0 1 10,-10 10,10 0 0 1 10,10" class="dot" />
-						<path class="path path1" d="m 10,100 c 0,-16.568542 13.431458,-30 30,-30 16.568542,0 30,13.431458 30,30"
-						style="fill:none;fill-opacity:0.8;stroke-width:20;stroke-linecap:round;" />
-						<path class="path path2" style="fill:none;fill-opacity:0.8;stroke-width:20;stroke-linecap:round;"
-						d="m 70,100 c 0,-16.568542 13.43146,-30 30,-30 16.56854,0 30,13.431458 30,30" />
-						<path class="path path3" d="m 130,100 c 0,-16.568542 13.43146,-30 30,-30 16.56854,0 30,13.431458 30,30"
-						style="fill:none;fill-opacity:0.8;stroke-width:20;stroke-linecap:round;" />
-					</svg>
-				</div>
-			</div>
-		</div>
-		</div>	
-	</div>
+
+	<div class="proyects2">
+
+	<figure class="snip1401">
+		<img src="images\basket.jpg" alt="sample67" />
+		<figcaption>
+		  <h3>NBA Page</h3>
+		  <p class="p-proyect">Web application built in Python.
+			 This web scrap info about player points in games played from 1950 to 2022.</p>
+		</figcaption><i class="fa fa-search"></i>
+		<a href="https://juanki019-streamlitbasket-index-ir0rh7.streamlit.app/" target="_blank""></a>
+	  </figure>
+	  <figure class="snip1401"><img src="images\track.png" alt="sample93" />
+		<figcaption>
+		  <h3>Track Number</h3>
+		  <p class="p-proyect">This program allows you to enter a phone number and get the server location of the phone connected to.</p>
+		</figcaption><i class="fa fa-search"></i>
+		<a href="https://github.com/Juanki019/trackNumber"></a>
+	  </figure>
+	  <figure class="snip1401"><img src="images\grafic.png" alt="sample87" />
+		<figcaption>
+		  <h3>Predicting Prices</h3>
+		  <p class="p-proyect">The project involves manipulating stock price data of a company and predicting what will happen to the stock price. </p>
+		</figcaption><i class="fa fa-search"></i>
+		<a href="https://github.com/Juanki019/StockPrices"></a>
+	  </figure>
+
+	  <figure class="snip1401">
+		<img src="images\KHR.png" alt="sample67" />
+		<figcaption>
+		  <h3>KHR</h3>
+		  <p class="p-proyect">Java application that aims to  efficiently and practically monitor sports teams.</p>
+		</figcaption><i class="fa fa-search"></i>
+		<a href="https://github.com/Juanki019/KHRV1"></a>
+	  </figure>
+	  <figure class="snip1401"><img src="images\meteo.png" alt="sample93" />
+		<figcaption>
+		  <h3>MeteoStats</h3>
+		  <p class="p-proyect">Java application that allows users to view weather information obtained by proprietary sensors and send messages using a database</p>
+		</figcaption><i class="fa fa-search"></i>
+		<a href="https://github.com/ProyectoInformatica/pri22-meteostats"></a>
+	  </figure>
+	  <figure class="snip1401"><img src="images\code.png" alt="sample87" />
+		<figcaption>
+		  <h3>Algorithm table Hash</h3>
+		  <p class="p-proyect">The only skills I have the patience to learn are those that have no real application in life. </p>
+		</figcaption><i class="fa fa-search"></i>
+		<a href="https://github.com/Juanki019/tabla-hash-con-direccionamiento-doble"></a>
+	  </figure>
+</div>
 </section>
+
 
 
 <!--========== FOOTER ================-->
