@@ -89,12 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //rotate txt
 /* Demo purposes only */
-$(".hover").mouseleave(
-    function () {
-      $(this).removeClass("hover");
-    }
-  );
-  
+
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
