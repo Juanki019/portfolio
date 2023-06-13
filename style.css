@@ -458,7 +458,7 @@ p{
   padding: 1rem;
   border-radius: 0;
   margin-bottom: 5rem;
-  transform: rotate(5deg);
+  transform: rotate(3deg);
   margin-left: -10rem;
 }
 
@@ -472,7 +472,7 @@ p{
   margin: 1rem auto;
   padding-bottom: 5rem;
   margin-top: 8rem;
-  transform: rotate(-5deg);
+  transform: rotate(-3deg);
 
 }
 
@@ -623,7 +623,7 @@ p{
   line-height:normal;
   position:relative;
   width:50%;
-  padding: 40px 70px;
+  padding: 40px 48px;
 }
 
 .timeline ul li .right_content h2{
@@ -634,7 +634,7 @@ p{
 
 .timeline ul li:nth-child(odd){
   float:left;
-  text-align:right;
+  text-align:s;
   clear:both;
 }
 
@@ -646,6 +646,7 @@ p{
 
 .left_content{
   padding-bottom:20px;
+  font-style: oblique;
 }
 
 .timeline ul li:nth-child(odd):before{
@@ -703,6 +704,9 @@ p{
 
 .description_quali{
   color: #000;
+    font-family: sans-serif;
+  font-style: oblique;
+
 }
 
 
@@ -781,7 +785,7 @@ p{
   font-family: 'Playfair Display', Arial, sans-serif;
   position: relative;
   overflow: hidden;
-  margin: 10px;
+  margin: 20px;
   min-width: 230px;
   max-width: 315px;
   max-height: 220px;
@@ -790,6 +794,7 @@ p{
   text-align: right;
   font-size: 16px;
   background-color: #000000;
+  z-index: 3;
 }
 .snip1401 * {
   -webkit-box-sizing: border-box;
@@ -904,6 +909,7 @@ p{
 
 .p-proyect{
   color: #000;
+  font-style: oblique;
 }
 
 
@@ -953,7 +959,7 @@ p{
 
 
 footer {
-  margin-top: 100px;
+  margin-top: 120px;
   margin-bottom:-10px;
   margin-left: -7px;
   height: 220px;
