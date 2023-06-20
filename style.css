@@ -1113,6 +1113,7 @@ ul.social-icons {
     height: calc(100vh - 70px); 
     transform-origin: 2s;
     overflow-y: auto; 
+    z-index: 100;
 
   }
   
