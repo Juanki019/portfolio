@@ -191,5 +191,6 @@ const increase = () => {
 };
 
 
+
 const snips = document.querySelectorAll('.snip1401');
 
