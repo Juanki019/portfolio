@@ -234,15 +234,12 @@ p{
       border: 2px solid #ffffff;
       border-radius: 50%;
       padding: .2rem;
-      margin-bottom: 2rem;
+      margin-bottom: -2rem;
       color: #fff;
       background: transparent;
       overflow: hidden;
-      border-top: 2px solid rgba(255, 49, 49, 0.5);
-      border-right: 2px solid rgba(0, 255, 255, 0.5);
-      border-bottom: 2px solid rgba(57, 255, 20, 0.5);
-      border-left: 2px solid rgba(255, 255, 113, 0.5);
-      padding: 1em; }
+
+      padding: 0.5em; }
 
     #about p {
       font-size: 1.25rem; }
@@ -363,6 +360,11 @@ p{
 
 
 /* --------------  INIT SKILLS  --------------- */
+
+  .skill{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
 
   .skills-container{
     display: grid;
@@ -1359,3 +1361,64 @@ header p{
   }
 }
 
+
+.outerCircle {
+background-color: transparent;
+border: 10px solid rgba(196, 98, 98, 0.9);
+opacity: .9;
+border-right: 5px solid transparent;
+border-left: 5px solid transparent;
+border-radius: 223px;
+width: 413px;
+height: 413px;
+margin: 0 auto;
+-moz-animation: spinPulse 3s infinite ease-in-out;
+-webkit-animation: spinPulse 3s infinite ease-in-out;
+}
+.innerCircle {
+background-color: transparent;
+opacity: .9;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+border-radius: 100px;
+top: -410px;
+width: 80%;
+height: 80%;
+margin: 0 auto;
+position: relative;
+-moz-animation: spinoffPulse 1s infinite linear;
+
+}
+
+
+@-moz-keyframes spinPulse {
+    0% { -moz-transform:rotate(160deg); opacity:0; box-shadow:0 0 1px #bdd73c;}
+	50% { -moz-transform:rotate(145deg); opacity:1; }
+	100% { -moz-transform:rotate(-320deg); opacity:0; }
+}
+@-moz-keyframes spinoffPulse {
+    0% { -moz-transform:rotate(0deg); }
+	100% { -moz-transform:rotate(360deg);  }
+}
+@-webkit-keyframes spinPulse {
+    0% { -webkit-transform:rotate(160deg); opacity:0; box-shadow:0 0 1px #bdd73c; }
+	50% { -webkit-transform:rotate(145deg); opacity:1;}
+	100% { -webkit-transform:rotate(-320deg); opacity:0; }
+}
+@-webkit-keyframes spinoffPulse {
+    0% { -webkit-transform:rotate(0deg); }
+	100% { -webkit-transform:rotate(360deg); }
+}
+@-moz-keyframes rotatecircle {
+    0% { -moz-transform:rotate(0deg); }
+	100% { -moz-transform:rotate(-360deg); }
+}
+
+@-webkit-keyframes rotatecircle {
+    0% { -webkit-transform:rotate(0deg); }
+100% { -webkit-transform:rotate(-360deg); }
+}
+
+.imgme{
+  margin-bottom: -18rem;
+}
